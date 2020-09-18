@@ -1,2 +1,2 @@
 # HackChennai-FitEat
-This is a Fitness Web Application for the HackChennai Hackathon :)
+This is a Fitness Web Application being built for the HackChennai Hackathon :)
