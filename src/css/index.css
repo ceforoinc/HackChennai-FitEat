@@ -1,0 +1,110 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Variables */
+:root {
+  --landingpage-color: #ecf4f3;
+  --form-color: rgba(104, 176, 171, 0.78);
+  --primary-btn-color: rgba(0, 106, 113, 0.5);
+}
+/* Utility Classes */
+.lead {
+  font-size: 5rem;
+}
+.primary-text {
+  font-size: 2rem;
+}
+.btn {
+  display: inline-block;
+  padding: 1rem;
+  font-size: 1.3rem;
+  margin: 2rem 0;
+  width: 70%;
+  height: 5rem;
+  border: none;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+.btn:hover {
+  opacity: 0.7;
+}
+.btn:focus {
+  outline: none;
+}
+/* Landing page */
+#landingpage {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+}
+#landingpage .landingpage-tagline {
+  width: 70vw;
+  background: var(--landingpage-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: Montserrat, 'sans-serif';
+  font-weight: normal;
+  position: relative;
+}
+#landingpage .landingpage-tagline h1 {
+  margin: 2rem;
+}
+.landingpage-tagline .tagline-image {
+  background: url('/public/assets/images/fiteatpic1.png') no-repeat center
+    center/contain;
+  height: 80%;
+  width: 100%;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  opacity: 0.3;
+
+  transform: translate(-50%, -50%);
+}
+
+#landingpage .landingpage-form {
+  width: 30vw;
+  background: var(--form-color);
+  font-family: 'Lato', 'sans-serif';
+  text-align: center;
+  padding-top: 4rem;
+}
+.landingpage-form .primary-text {
+  margin: 2rem 0;
+  font-size: 2.5rem;
+  font-weight: normal;
+}
+.landingpage-form form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  margin: 3rem auto;
+  margin-top: 0;
+  height: 80%;
+}
+.landingpage-form form input {
+  border: none;
+  width: 100%;
+  margin: 1rem 0;
+  height: 4rem;
+  border-radius: 5px;
+  padding: 1rem;
+  font-size: 1.5rem;
+}
+.landingpage-form form input:focus {
+  outline: none;
+}
+
+.landingpage-form form .btn {
+  background: var(--primary-btn-color);
+}
