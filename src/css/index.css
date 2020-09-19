@@ -92,7 +92,8 @@
   margin-top: 0;
   height: 80%;
 }
-.landingpage-form form input {
+.landingpage-form form input,select {
+  background: #fff;
   border: none;
   width: 100%;
   margin: 1rem 0;
@@ -100,8 +101,9 @@
   border-radius: 5px;
   padding: 1rem;
   font-size: 1.5rem;
+  color: #888;
 }
-.landingpage-form form input:focus {
+.landingpage-form form input,select:focus {
   outline: none;
 }
 

@@ -1,49 +1,62 @@
 <html>
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="./css/results.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <section id="dashboard">
-      <div class="calorie-data">
-        <ul class="list calorie-info">
-          <li>Total Calories consumed today</li>
-          <li>Body Mass Index</li>
-          <li>Required Calories to be consumed today</li>
-          <li id="fourth-item-list">Calories to be</li>
-        </ul>
 
-        <ul class="list values">
-          <li>1000</li>
-          <li>1000</li>
-          <li>1000</li>
-          <li>1000</li>
-        </ul>
-      </div>
-    </section>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.min.js"></script>
+  <link rel="stylesheet" href="./css/results.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet" />
+</head>
 
-    <section id="result-page">
-      <div class="item-input">
-        <div class="meal-input dabba">
-          <p class="subheads">New Meal</p>
-          <div class="meal-input-container">
+<body>
+  <section id="dashboard">
+    <div class="calorie-data">
+      <ul class="list calorie-info">
+        <li>Total Calories consumed today</li>
+        <li>Required Calories to be consumed today</li>
+        <li id="cal-to-be"></li>
+      </ul>
+
+      <ul class="list values">
+        <li id="tot-cal-con-tod"></li>
+        <li id="req-cal-con-tod"></li>
+        <li id="cal-to-be-val"></li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="result-page">
+    <div class="item-input">
+      <div class="meal-input dabba">
+        <p class="subheads">New Meal</p>
+        <div class="meal-input-container">
+
+          <div class="autocomplete" style="width:300px">
             <input type="text" placeholder="Enter dish name" id="dishName" />
-            <input type="number" placeholder="" id="quantity" />
           </div>
-          <button class="btn">Add Item</button>
+          <input type="number" placeholder="Servings" id="quantity" />
+
         </div>
-        <div class="cart dabba">
-          <p class="subheads">Items consumed</p>
-          <form action="">
-            <input type="submit" class="btn" value="Submit Meal" />
-          </form>
-        </div>
+        <button class="btn" id="add-item-btn">Add Item</button>
       </div>
-    </section>
-    <script src="./js/result.js"></script>
-  </body>
+      <div class="cart dabba">
+
+        <p class="subheads">Items consumed</p>
+        <ul class="list items-consumed-list" id="items-list"></ul>
+        <div class="tot-cal-section">
+          <p>Total Calories consumed:</p>
+          <div class="total-calories">0</div>
+        </div>
+
+        <form action="" id="form">
+          <button class="btn" id="sub-meal">Submit Meal</button>
+
+        </form>
+
+
+      </div>
+    </div>
+  </section>
+  <script src="./js/result.js"></script>
+</body>
+
 </html>
