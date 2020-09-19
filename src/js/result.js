@@ -283,6 +283,16 @@ async function postMealData(e) {
     body: JSON.stringify(data)
   })
   const bla = await res.json();
+  console.log(bla);
+  itemsList.forEach((item) => {
+    item.firstChild.innerText = '';
+  })
+  itemsList.forEach((item) => {
+    item.firstChild.nextSibling.innerText = '';
+  })
+
+
+
 }
 const form = document.getElementById('form');
 
