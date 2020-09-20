@@ -34,9 +34,9 @@ c. MongoDB
 ## Live demo
 _ (https://fiteat-app.herokuapp.com/) _
 ## Screenshots
-### Landing page
+## Landing page
 <img src="screenshots/landingpage.png">
-### Form page
+## Form page
 <img src="screenshots/mainpage.png">
-### Resultd page
+## Results page
 <img src="screenshots/resultspage.png">
