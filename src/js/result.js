@@ -204,7 +204,7 @@ async function addToCart() {
 }
 
 async function getFitnessData() {
-  const url = 'http://localhost:5000/api/v1/fitness';
+  const url = '/api/v1/fitness';
 
   const res = await fetch(url);
 
@@ -231,7 +231,7 @@ async function getFitnessData() {
   }
 }
 async function getMealData() {
-  const url = 'http://localhost:5000/api/v1/meals';
+  const url = '/api/v1/meals';
 
   const res = await fetch(url);
 
@@ -261,7 +261,7 @@ function fillDashboardDetails(data) {
 
 async function postMealData(e) {
   e.preventDefault();
-  const postMealsUrl = 'http://localhost:5000/api/v1/meals';
+  const postMealsUrl = '/api/v1/meals';
   let meals = [];
   const itemsList = document.querySelectorAll('.item');
   itemsList.forEach((item) => {
