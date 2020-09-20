@@ -14,15 +14,15 @@ async function getCalorieApi(itemName) {
   var searchUrl =
     "https://api.nutritionix.com/v1/search/" +
     itemName +
-    "?results=0:20&fields=item_name,brand_name,item_id,nf_calories&appId=323e3bf5&appKey=d146e0f262f36019ecb7ff30a480cc04";
+    "?results=0:20&fields=item_name,brand_name,item_id,nf_calories&appId=6125faac&appKey=b6b71ec2d54c8666c3b48f4b3ca254f3";
 
   // const searchUrl = `https://trackapi.nutritionix.com/v2/search/item?nix_item_id=${itemName}`
 
   let res = await fetch(searchUrl,
     {
       headers: {
-        'x-app-id': '323e3bf5',
-        'x-app-key': 'd146e0f262f36019ecb7ff30a480cc04',
+        'x-app-id': '6125faac',
+        'x-app-key': 'b6b71ec2d54c8666c3b48f4b3ca254f3',
       }
     });
   let data = await res.json();
@@ -34,8 +34,8 @@ async function getapi(url) {
   // Storing response
   const response = await fetch(url, {
     headers: {
-      'x-app-id': '323e3bf5',
-      'x-app-key': 'd146e0f262f36019ecb7ff30a480cc04',
+      'x-app-id': '6125faac',
+      'x-app-key': 'b6b71ec2d54c8666c3b48f4b3ca254f3',
     },
   });
 
