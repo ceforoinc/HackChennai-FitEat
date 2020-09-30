@@ -22,7 +22,7 @@ c. MongoDB
 ## Features that can be added on
 1. Authentication wtih User Logout and Login system.
 2. Update and Delete functionalities for meals.
-3. History for Meal data
+3. History for Meal data.
 
 ## Component Hierarchy
 ### Landing Page
