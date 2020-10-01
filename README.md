@@ -40,3 +40,19 @@ _ (https://fiteat-app.herokuapp.com/) _
 <img src="screenshots/mainpage.png">
 
 <img src="screenshots/resultspage.png">
+
+# How to Contribute to this repository 
+
+1. Fork this repo
+2. Clone the repo using ``` git clone <repo-link> ```
+3. Make a new branch using ``` git checkout -b <branch-name> ```
+4. After making changes, add your files using ``` git add . ```
+5. Commit your files for push using ``` git commit -m "commit-message" ```
+6. Push these changes to your fork using ``` git push origin <branch-name> ```
+7. Create a pull request to the main repo.
+
+## Things to keep in mind before submitting a PR:
+
+1. Make sure your branches are up to date with the master branch of the main repo.
+2. Add the upstream repo by using ``` git remote add upstream <upstream-repo-link> ```
+3. Fetch the latest commit details using ``` git fetch upstream ``` and merge them using ``` git merge upstream/master master ```
