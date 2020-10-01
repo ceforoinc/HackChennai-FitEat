@@ -30,7 +30,7 @@
     border: none;
     background-color: #FF7E67;
     color: #000000;
-    border-radius: 5px;
+    border-radius: 0 5px 5px 0;
     cursor: pointer;
     transition: opacity 0.3s ease;
   }
